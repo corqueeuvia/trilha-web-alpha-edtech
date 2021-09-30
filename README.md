@@ -73,9 +73,11 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre a trilha web
 
-![![Projeto Alpha EdTech][logo-alpha-edtech]][alpha-edtech]
+<a href="https://sejaalphaedtech.org.br/">
+    <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="110">
+</a>
 
-A tal da "trilha web" é o caminho de aprendizagem que o projeto ![Alpha EdTech][alpha-edtech] do Instituto Alpha Lumen propõe a quem encara o desafio de ser Aspirante. Eu sou Aspirante a desenvolvedor da turma Lovelace, a segunda turma do Alpha EdTech, e criei este repositório para praticar meus aprendizados de Git e GitHub e também para expor meus resultados no front-end. Por aqui vou poder (e você também!) acompanhar meu desenvolvimento, começando pelo front, nessa jornada para me tornar um Desenvolvedor Full-Stack. Bora lá! 
+A tal da "trilha web" é o caminho de aprendizagem que o projeto [Alpha EdTech](https://sejaalphaedtech.org.br/) do Instituto Alpha Lumen propõe a quem encara o desafio de ser Aspirante. Eu sou Aspirante a desenvolvedor da turma Lovelace, a segunda turma do Alpha EdTech, e criei este repositório para praticar meus aprendizados de Git e GitHub e também para expor meus resultados no front-end. Por aqui vou poder (e você também!) acompanhar meu desenvolvimento, começando pelo front, nessa jornada para me tornar um Desenvolvedor Full-Stack. Bora lá! 
 
 
 ### Feito com
@@ -83,14 +85,6 @@ A tal da "trilha web" é o caminho de aprendizagem que o projeto ![Alpha EdTech]
 * [VS Code](https://code.visualstudio.com/)
 * [Git Bash](https://gitforwindows.org/)
 * [GitHub](https://github.com/)
-
-
-
-<!-- LICENSE -->
-## Licença
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 
 
 <!-- CONTACT -->
@@ -105,9 +99,9 @@ Mais projetos no [GitHub](https://github.com/corqueeuvia)
 <!-- ACKNOWLEDGEMENTS -->
 ## Agradecimentos
 
-* Othneil Drew, pelo ![melhor template de README][readme-template].
-* ![Projeto Alpha EdTech][alpha-edtech], pela oportunidade.
-* ![EducaTransforma][educa-transforma], pelo curso de Linux que facilitou as aulas de Git.
+* Othneil Drew, pelo [melhor template de README](https://github.com/othneildrew/Best-README-Template).
+* [Projeto Alpha EdTech](https://sejaalphaedtech.org.br/), pela oportunidade.
+* ![EducaTransforma](https://educatransforma.com.br/), pelo curso de Linux que facilitou as aulas de Git.
 
 
 
@@ -124,7 +118,3 @@ Mais projetos no [GitHub](https://github.com/corqueeuvia)
 [seguidores-url]: https://github.com/corqueeuvia?tab=followers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/corcoviacaique
-[alpha-edtech]: https://sejaalphaedtech.org.br/
-[readme-template]: https://github.com/othneildrew/Best-README-Template
-[educa-transforma]: https://educatransforma.com.br/
-[logo-alpha-edtech]: imagens/logo-alpha-edtech.png
