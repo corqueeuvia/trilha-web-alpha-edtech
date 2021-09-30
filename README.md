@@ -21,7 +21,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Commits/semana][commits-shield]][commits-url]
-[![Linguagens][linguagens-shield]]
+![Linguagens][linguagens-shield]
 [![Seguidores][seguidores-shield]][seguidores-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
