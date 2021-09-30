@@ -20,7 +20,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+[![Commits/semana][commits-shield]][commits-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -180,8 +180,8 @@ Project Link: [https://github.com/corqueeuvia/trilha-web-alpha-edtech](https://g
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/w/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
+[commits-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/graphs/commit-activity
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
