@@ -31,7 +31,8 @@
 <br />
 <p align="center">
   <a href="https://github.com/corqueeuvia/trilha-web-alpha-edtech">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="imagens/logo-instituto-alpha-lumen.png" alt="Logo" height="80">
+    <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Trilha Web</h3>
