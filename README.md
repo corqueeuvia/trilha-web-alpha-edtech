@@ -62,7 +62,6 @@
         <li><a href="#feito-com">Feito com</a></li>
       </ul>
     </li>
-    <li><a href="#licença">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
     <li><a href="#agradecimentos">Agradecimentos</a></li>
   </ol>
@@ -73,10 +72,12 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre a trilha web
 
-<a href="https://sejaalphaedtech.org.br/">
-    <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="110">
-</a>
+<p align="center">
+    <a href="https://sejaalphaedtech.org.br/">
+        <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="110">
+    </a>
 
+<p align="justify">
 A tal da "trilha web" é o caminho de aprendizagem que o projeto [Alpha EdTech](https://sejaalphaedtech.org.br/) do Instituto Alpha Lumen propõe a quem encara o desafio de ser Aspirante. Eu sou Aspirante a desenvolvedor da turma Lovelace, a segunda turma do Alpha EdTech, e criei este repositório para praticar meus aprendizados de Git e GitHub e também para expor meus resultados no front-end. Por aqui vou poder (e você também!) acompanhar meu desenvolvimento, começando pelo front, nessa jornada para me tornar um Desenvolvedor Full-Stack. Bora lá! 
 
 
@@ -95,13 +96,12 @@ Caique C. O. Corcovia - [in/corcoviacaique](https://linkedin.com/in/corcoviacaiq
 Mais projetos no [GitHub](https://github.com/corqueeuvia)
 
 
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Agradecimentos
 
 * Othneil Drew, pelo [melhor template de README](https://github.com/othneildrew/Best-README-Template).
 * [Projeto Alpha EdTech](https://sejaalphaedtech.org.br/), pela oportunidade.
-* ![EducaTransforma](https://educatransforma.com.br/), pelo curso de Linux que facilitou as aulas de Git.
+* [EducaTransforma](https://educatransforma.com.br/), pelo curso de Linux que facilitou as aulas de Git.
 
 
 
