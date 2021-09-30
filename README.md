@@ -22,6 +22,8 @@
 -->
 [![Commits/semana][commits-shield]][commits-url]
 ![Linguagens][linguagens-shield]
+![Visualizações][visualizacoes-shield]
+![Estrelas][estrelas-shield]
 [![Seguidores][seguidores-shield]][seguidores-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -30,15 +32,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/corqueeuvia/trilha-web-alpha-edtech">
-    <img src="imagens/logo-instituto-alpha-lumen.png" alt="Logo" height="80">
-    <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="80">
+  <a href="https://alphalumen.org.br/">
+    <img src="imagens/logo-instituto-alpha-lumen.png" alt="Logo" height="90">
   </a>
 
   <h3 align="center">Trilha Web</h3>
 
   <p align="center">
-    Você está prestes a se sentir como um tipo de entidade superior... Porque você vai poder observar minha trilha web passo a passo: cada aprendizado, cada commit mal enviado, tudo! Talvez isso não pareça muita coisa pras primeiras pessoas a acessarem aqui, mas em algum tempo vai ter muito o que ser observado por estas bandas e aí quem estiver observando vai poder viajar no tempo, rever cada decisão tomada, acompanhar "uma vida" de aprendizado em desenvolvimento web. Vai poder se sentir como uma divindade. Boa leitura!
+    Você está prestes a se sentir como um tipo de entidade superior... Obervando aqui cada passo do meu aprendizado front-end. Tudo que for desenvolvido como resolução dos desafios virá pra cá. Boa leitura!
     <br />
     <a href="https://github.com/corqueeuvia/trilha-web-alpha-edtech"><strong>Documentação »</strong></a>
     <br />
@@ -61,19 +62,9 @@
         <li><a href="#built-with">Feito com</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Os projetos</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#license">Licença</a></li>
+    <li><a href="#contact">Contato</a></li>
+    <li><a href="#acknowledgements">Agradecimentos</a></li>
   </ol>
 </details>
 
@@ -95,79 +86,24 @@ A tal da "trilha web" é o caminho de aprendizagem que o projeto Alpha EdTech do
 
 
 
-<!-- GETTING STARTED -->
-## Os projetos
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/corqueeuvia/trilha-web-alpha-edtech.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/corqueeuvia/trilha-web-alpha-edtech/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
 <!-- LICENSE -->
-## License
+## Licença
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
-Caique C. O. Corcovia - [in/corcoviacaique](https://linkedin.com/in/corcoviacaique) - corcovia.caique@gmail.com
+Caique C. O. Corcovia - [in/corcoviacaique](https://linkedin.com/in/corcoviacaique)
 
-Project Link: [https://github.com/corqueeuvia/trilha-web-alpha-edtech](https://github.com/corqueeuvia/trilha-web-alpha-edtech)
+Mais projetos no [GitHub](https://github.com/corqueeuvia)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Agradecimentos
 
 * []()
 * []()
@@ -182,7 +118,10 @@ Project Link: [https://github.com/corqueeuvia/trilha-web-alpha-edtech](https://g
 [commits-shield]: https://img.shields.io/github/commit-activity/w/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
 [commits-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/graphs/commit-activity
 [linguagens-shield]: https://img.shields.io/github/languages/top/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
+[visualizacoes-shield]: https://img.shields.io/github/watchers/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
+[estrelas-shield]: https://img.shields.io/github/stars/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
 [seguidores-shield]: https://img.shields.io/github/followers/corqueeuvia?style=for-the-badge
 [seguidores-url]: https://github.com/corqueeuvia?tab=followers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/corcoviacaique
+
