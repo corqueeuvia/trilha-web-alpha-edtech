@@ -21,10 +21,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Commits/semana][commits-shield]][commits-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![Linguagens][linguagens-shield]]
+[![Seguidores][seguidores-shield]][seguidores-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -182,13 +180,8 @@ Project Link: [https://github.com/corqueeuvia/trilha-web-alpha-edtech](https://g
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [commits-shield]: https://img.shields.io/github/commit-activity/w/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
 [commits-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/graphs/commit-activity
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/stargazers
-[issues-shield]: https://img.shields.io/github/issues/corqueeuvia/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/issues
-[license-shield]:https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/blob/master/LICENSE.txt
+[linguagens-shield]: https://img.shields.io/github/languages/top/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
+[seguidores-shield]: https://img.shields.io/github/followers/corqueeuvia?style=for-the-badge
+[seguidores-url]: https://github.com/corqueeuvia?tab=followers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/corcoviacaique
