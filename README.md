@@ -39,7 +39,7 @@
   <h3 align="center">Trilha Web</h3>
 
   <p align="center">
-    Você está prestes a se sentir como um tipo de entidade superior... Obervando aqui cada passo do meu aprendizado front-end. Tudo que for desenvolvido como resolução dos desafios virá pra cá. Boa leitura!
+    Este repositório é o canal para observar cada passo do meu aprendizado front-end. Desde o primeiro hello-world.html
     <br />
     <a href="https://github.com/corqueeuvia/trilha-web-alpha-edtech"><strong>Documentação »</strong></a>
     <br />
@@ -54,7 +54,7 @@
 
 <!-- SUMÁRIO -->
 <details open="open">
-  <summary><h2 style="display: inline-block">O que tem aqui</h2></summary>
+  <summary>O que tem aqui</summary>
   <ol>
     <li>
       <a href="#sobre-a-trilha-web">Sobre a trilha web</a>
@@ -78,7 +78,7 @@
     </a>
 
 <p align="justify">
-A tal da "trilha web" é o caminho de aprendizagem que o projeto [Alpha EdTech](https://sejaalphaedtech.org.br/) do Instituto Alpha Lumen propõe a quem encara o desafio de ser Aspirante. Eu sou Aspirante a desenvolvedor da turma Lovelace, a segunda turma do Alpha EdTech, e criei este repositório para praticar meus aprendizados de Git e GitHub e também para expor meus resultados no front-end. Por aqui vou poder (e você também!) acompanhar meu desenvolvimento, começando pelo front, nessa jornada para me tornar um Desenvolvedor Full-Stack. Bora lá! 
+A tal da "trilha web" é o caminho de aprendizagem que o projeto Alpha EdTech do Instituto Alpha Lumen propõe a quem encara o desafio de ser Aspirante. Eu sou Aspirante a desenvolvedor da turma Lovelace, a segunda turma do Alpha EdTech, e criei este repositório para praticar meus aprendizados de Git e GitHub e também para expor meus resultados no front-end. Por aqui vou poder (e você também!) acompanhar meu desenvolvimento, começando pelo front, nessa jornada para me tornar um Desenvolvedor Full-Stack. Bora lá! 
 
 
 ### Feito com
