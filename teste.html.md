@@ -69,7 +69,7 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- DESCRIÇÃO -->
 ## Sobre a trilha web
 
 <p align="center">
@@ -88,7 +88,7 @@ A tal da "trilha web" é o caminho de aprendizagem que o projeto Alpha EdTech do
 * [GitHub](https://github.com/)
 
 
-<!-- CONTACT -->
+<!-- CONTATO -->
 ## Contato
 
 Caique C. O. Corcovia - [in/corcoviacaique](https://linkedin.com/in/corcoviacaique)
@@ -96,7 +96,7 @@ Caique C. O. Corcovia - [in/corcoviacaique](https://linkedin.com/in/corcoviacaiq
 Mais projetos no [GitHub](https://github.com/corqueeuvia)
 
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- AGRADECIMENTOS -->
 ## Agradecimentos
 
 * Othneil Drew, pelo [melhor template de README](https://github.com/othneildrew/Best-README-Template).
@@ -107,7 +107,7 @@ Mais projetos no [GitHub](https://github.com/corqueeuvia)
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<!-- MARCADORES DE LINKS & IMAGENS -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [commits-shield]: https://img.shields.io/github/commit-activity/w/corqueeuvia/trilha-web-alpha-edtech?style=for-the-badge
 [commits-url]: https://github.com/corqueeuvia/trilha-web-alpha-edtech/graphs/commit-activity
