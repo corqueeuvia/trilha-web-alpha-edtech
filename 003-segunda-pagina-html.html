@@ -4,15 +4,62 @@
     <title>Lovelace</title>
 </head>
 <body>
-    
-    <h1>
-        <img src="imagens/logo-alpha-edtech.png" alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares." style="float:right;width:194px;height:110px">
-        <img src="imagens/logo-turma-lovelace.jfif" alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares." style="float:left;width150px;height:150px">
-        Alpha EdTech - Turma Lovelace
-    </h1>
-    
-    <p>Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech</p>
 
+<!-- DEFINIÇÕES DE ESTILO DA PÁGINA -->
+    <style>
+       body {
+           background-color: rgb(0,0,0);
+           color:seashell;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: large;
+       }
+
+       h1 {
+           color: rgba(5, 115, 99, 255);
+       }
+       h2, h3, summary {
+        color: rgba(255,146,227,255);
+       }
+       
+
+       a {color: rgba(5, 115, 99, 255)}
+
+
+
+    <!--ESTILOS DA TABELA-->
+        table, th, td {
+          background-color: rgba(5, 115, 99, 255);
+          text-align: center;
+          color: #f5f5f5;
+        }
+
+        th, #periodo {
+          background-color: rgba(5,115,99, 0.548);
+          font-weight: bolder;
+          
+        }
+
+        #livre {
+          background-color: rgba(255, 89, 213, 0.637);
+        }
+
+    </style>
+
+<!-- INÍCIO DA PÁGINA -->
+    
+    <header>
+        <h1>
+            <img src="imagens/logo-alpha-edtech.png" alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares." style="float:right;width:194px;height:110px">
+            <img src="imagens/logo-turma-lovelace.png" alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares." style="float:right;width100px;height:100px">
+            Alpha EdTech
+        </h1>
+    
+        <h2>Turma Lovelace</h2>
+        
+        <p>Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech</p>
+    
+    </header>
+    
     <hr />
 
     <p align="right"><a href="https://www.alphaedtech.org.br/">+ sobre o projeto Alpha EdTech</a>
@@ -23,7 +70,7 @@
 <!-- ÍNDICE -->
 
     <details open="open">
-        <summary>Índice</summary>
+        <summary id="indice">Índice</summary>
         <ul>
             <li><a href="#trilha-hard-skills">Trilha Hard Skills</a></li>
             <ul>
@@ -66,9 +113,12 @@
     <ol>
         <li>TCP, UDP, ICMP, ping e tracerout/tracert</li>
         <ul>
-            <a href="https://datatracker.ietf.org/doc/html/rfc793">
-                <li>RFC 793</li>
-            </a>
+            <li>
+                <a href="https://datatracker.ietf.org/doc/html/rfc793">
+                    RFC 793
+                </a>
+            </li>
+            
             <a href="https://www.meridianoutpost.com/resources/articles/well-known-tcpip-ports.php">    
                 <li>Portas conhecidas TCP/IP</li>
             </a>
@@ -311,16 +361,8 @@
     </ol>
 
     <hr />
-<!--TABELA DE ALGUMA COISA-->
+<!--AGENDA DA SEMANA-->
 
-    <style>
-        table, th, td, tr {
-          border:1px solid black;
-          text-align: center;
-        }
-    </style>
-
-    
     <h2 id="agenda">Agenda da semana 4-10/10</h2>
     
     <table style="width:100%">
@@ -335,21 +377,21 @@
         <th>DOM</th>
       </tr>
       <tr>
-        <td>MANHÃ</td>
+        <td id="periodo">MANHÃ</td>
         <td colspan=5> 6h-8h Redes Alura <br /> 8h-10h Linux Alura <br /> 10h-11h Monitoria </td>
         <td> 8h-10h Inglês </td>
-        <td rowspan=3> Livre para sentar a bunda na cadeira e estudar </td>
+        <td id="livre" rowspan=3> Livre para sentar a bunda na cadeira e estudar </td>
     
       </tr>
       <tr>
-        <td>TARDE</td>
+        <td id="periodo">TARDE</td>
         <td colspan=3> 14h30-16h Trilha hard - Web </td>
         <td colspan=2> 14h30-16h Trilha hard - Web <br /> 17h30-19h Trilha soft - EdTech </td>
-        <td rowspan=2> Livre para sentar a bunda na cadeira e estudar </td>
+        <td id="livre" rowspan=2> Livre para sentar a bunda na cadeira e estudar </td>
       </tr>
       <tr>
-        <td>NOITE</td>
-        <td colspan=4> Livre para sentar a bunda na cadeira e estudar </td>
+        <td id="periodo">NOITE</td>
+        <td id="livre" colspan=4> Livre para sentar a bunda na cadeira e estudar </td>
         <td>18h-19h Trilha soft - Empresa Parceira</td>
       </tr>
     </table>
@@ -360,6 +402,3 @@
     <p>Algum rodapé aqui embaixo</p>
 
 </body>
-<footer>
-    
-</footer>
