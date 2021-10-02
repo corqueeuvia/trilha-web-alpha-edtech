@@ -16,11 +16,25 @@
 
        h1 {
            color: rgba(5, 115, 99, 255);
+           text-align: center;
        }
-       h2, h3, summary {
+       h2, p.subtitulo {
         color: rgba(255,146,227,255);
+        text-align: center;
        }
        
+       p.citacao {
+           font-size: larger;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-style: italic;
+           text-align: center;
+       }
+
+       p.autor {
+           font-size: medium;
+           font-family: 'Courier New', Courier, monospace;
+           text-align: center;
+       }
 
        a {color: rgba(5, 115, 99, 255)}
 
@@ -50,13 +64,13 @@
     <header>
         <h1>
             <img src="imagens/logo-alpha-edtech.png" alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares." style="float:right;width:194px;height:110px">
-            <img src="imagens/logo-turma-lovelace.png" alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares." style="float:right;width100px;height:100px">
+            <img src="imagens/logo-turma-lovelace.png" alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares." style="float:left;width100px;height:100px">
             Alpha EdTech
         </h1>
     
         <h2>Turma Lovelace</h2>
         
-        <p>Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech</p>
+        <p class="subtitulo">Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech</p>
     
     </header>
     
@@ -70,8 +84,8 @@
 <!-- ÍNDICE -->
 
     <details open="open">
-        <summary id="indice">Índice</summary>
-        <ul>
+        <summary>Índice</summary>
+        <ul class="itens-indice">
             <li><a href="#trilha-hard-skills">Trilha Hard Skills</a></li>
             <ul>
                 <li><a href="#introducao-a-web">Introdução a Web</a></li>
@@ -102,11 +116,12 @@
     
     <hr />
 
-<!-- CONTEÚDO -->
+<!-- MATERIAIS POR TRILHA -->
 
     <h2 id="trilha-hard-skills">Trilha Hard Skills</h2>
-    <p>Materiais para desenvolvimento técnico</p>
-    <p><I>"Pra não sair falando besteira por aí." - TANIGUCHI, Kenji (2021)</I></p>
+    <p class="subtitulo">Materiais para desenvolvimento técnico</p>
+    <p class="citacao">"Pra não sair falando besteira por aí."</p>
+    <p class="autor">TANIGUCHI, Kenji (2021)</p>
 
     <h3 id="introducao-a-web">Introdução a Web</h3>
 
@@ -321,8 +336,9 @@
     </ol>
 
     <h2 id="trilha-soft-skills">Trilha Soft Skills</h2>
-    <p>Materiais para desenvolvimento pessoal</p>
-    <p><I>"O hard pode até colocar o cara na empresa, mas a falta do soft tira." - LÁZARI, Paulo (2021)</I></p>
+    <p class="subtitulo">Materiais para desenvolvimento pessoal</p>
+    <p class="citacao">"O hard pode até colocar o cara na empresa, mas a falta do soft tira."</p>
+    <p class="autor">LÁZARI, Paulo (2021)</p>
 
     <ol>
         <li>Life-long learning</li>
