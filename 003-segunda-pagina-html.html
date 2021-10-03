@@ -1,3 +1,16 @@
+<!-- PÁGINA PRODUZIDA PARA FINS DIDÁTICOS DURANTE CURSO DO ALPHA EDTECH
+
+    PROPOSTA:
+       1. Criar uma página HTML que possua:
+          a. Formatação de textos (ex.: "b", "strong", "i");
+          b. Adição de cores usando o atributo "style";
+    ✓      c. Textos clicáveis que direcionem para outra página usando a tag "a"; 
+    ✓      d. Imagens que, ao ser clicadas, abram a imagem em uma nova aba usando o atributo "target";
+    ✓      e. Uma tabela com no mínimo 4 linhas e 3 colunas usando a tag "table";
+    ✓      f. Um comentário que não será exibido ao usuário.
+        2. Salvar os arquivos, testar no JSFiddle e publicar no repositório git.
+-->
+
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -63,14 +76,22 @@
     
     <header>
         <h1>
-            <img src="imagens/logo-alpha-edtech.png" alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares." style="float:right;width:194px;height:110px">
-            <img src="imagens/logo-turma-lovelace.png" alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares." style="float:left;width100px;height:100px">
+            <a href="imagens/logo-alpha-edtech.png" target="_blank">
+                <img src="imagens/logo-alpha-edtech.png" 
+                 alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares."
+                 style="float:right;width:194px;height:110px">
+            </a>
+            <a href="imagens/logo-turma-lovelace.png" target="_blank">
+                <img src="imagens/logo-turma-lovelace.png" 
+                 alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares."
+                 style="float:left;width100px;height:100px">
+            </a>
             Alpha EdTech
         </h1>
     
         <h2>Turma Lovelace</h2>
         
-        <p class="subtitulo">Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech</p>
+        <p class="subtitulo">Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech<p>
     
     </header>
     
@@ -104,7 +125,7 @@
             </ul>
             <li><a href="#trilha-soft-skills">Trilha Soft Skills</a></li>
             <ol>
-                <li>Life-long learning</li>
+                <li>Lifelong learning</li>
                 <li>Design thinking</li>
                 <li>Tripé da competência (CHA)R</li>
                 <li>Growth Hacking</li>
@@ -178,7 +199,7 @@
                 <li>IPv6</li>
             </a>
             <a href="https://anchor.fm/camada8/episodes/Rumo-ao-IPv6-Brasil-ei20ng/a-a2u7kts">
-                <li>Poadcast Camada 8 - Rumo ao IPv6 Brasil!</li>
+                <li>Poadcast Camada 8 - Rumo ao IPv6, Brasil!</li>
             </a>
             <a href="https://www.youtube.com/watch?v=dkVHgQDRLxE">
                 <li>Live do NIC.br</li>
@@ -299,10 +320,10 @@
                 <li>Git - Guia prático</li>
             </a>
             <a href="https://www.youtube.com/watch?v=DqTITcMq68k">
-                <li>Rafaella Ballerini - O que é Git e GitHub 1/2</li>
+                <li>Rafaella Ballerini - O que é Git e GitHub</li>
             </a>
             <a href="https://www.youtube.com/watch?v=UBAX-13g8OM">
-                <li>Rafaella Ballerini - Como usar Git e GitHub na prática 2/2</li>
+                <li>Rafaella Ballerini - Como usar Git e GitHub na prática</li>
             </a>
             <a href="https://git-scm.com/docs/gitignore">
                 <li>.gitignore</li>
@@ -354,7 +375,7 @@
     <p class="autor">LÁZARI, Paulo (2021)</p>
 
     <ol>
-        <li>Life-long learning</li>
+        <li>Lifelong learning</li>
         <ul>
             <a href="https://exame.com/carreira/o-que-e-o-lifelong-learning-e-por-que-ele-e-essencial-na-carreira/">
                 <li>Exame.com - O que é "lifelong learning" e porque ele é essencial na carreira</li>
@@ -375,13 +396,13 @@
         <li>Tripé da competência (CHA)R</li>
         <ul>
             <a href="https://www.linkedin.com/pulse/trip%C3%A9-das-compet%C3%AAncias-cha-andr%C3%A9-schwambach-lira/?originalSubdomain=pt">
-                <li>André Schwambach Lira - Tripé das competências: CHA!!!</li>
+                <li>André Schwambach Lira - Tripé das competências: CHA</li>
             </a>
             <a href="https://jrmcoaching.com.br/blog/cha-conhecimento-habilidade-atitude-elementos-essenciais-carreira-sucesso/">
-                <li>JRM Coaching - Conhecimento, Habilidade e Atitude: Elementos Essenciais Para uma Carreira de Sucesso</li>
+                <li>JRM Coaching - Conhecimento, Habilidade e Atitude: elementos essenciais para uma carreira de sucesso</li>
             </a>
         </ul>
-        <li>Grouth Hacking</li>
+        <li>Growth Hacking</li>
         <ul>
             <a href="https://www.youtube.com/watch?v=SBELddM5g5Y">
                 <li>Growth Leaders Academy - O que é Growth Hacking</li>
@@ -394,31 +415,31 @@
 
     <h2 id="agenda">Agenda da semana 4-10/10</h2>
     
-    <table style="width:100%">
-      <tr>
-        <th>HORA/DIA</th>
-        <th id="seg">SEG</th>
-        <th id="ter">TER</th>
-        <th>QUA</th>
-        <th>QUI</th>
-        <th>SEX</th>
-        <th>SÁB</th>
-        <th>DOM</th>
+    <table style="width:100%;height:250px">
+      <tr height="16%">
+        <th width="9%">HORA/DIA</th>
+        <th width="13%">SEG</th>
+        <th width="13%">TER</th>
+        <th width="13%">QUA</th>
+        <th width="13%">QUI</th>
+        <th width="13%">SEX</th>
+        <th width="13%">SÁB</th>
+        <th width="13%">DOM</th>
       </tr>
-      <tr>
+      <tr height="28%">
         <td id="periodo">MANHÃ</td>
         <td colspan=5> 6h-8h Redes Alura <br /> 8h-10h Linux Alura <br /> 10h-11h Monitoria </td>
         <td> 8h-10h Inglês </td>
         <td id="livre" rowspan=3> Livre para sentar a bunda na cadeira e estudar </td>
     
       </tr>
-      <tr>
+      <tr height="28%">
         <td id="periodo">TARDE</td>
         <td colspan=3> 14h30-16h Trilha hard - Web </td>
         <td colspan=2> 14h30-16h Trilha hard - Web <br /> 17h30-19h Trilha soft - EdTech </td>
         <td id="livre" rowspan=2> Livre para sentar a bunda na cadeira e estudar </td>
       </tr>
-      <tr>
+      <tr height="28%">
         <td id="periodo">NOITE</td>
         <td id="livre" colspan=4> Livre para sentar a bunda na cadeira e estudar </td>
         <td>18h-19h Trilha soft - Empresa Parceira</td>
@@ -427,7 +448,11 @@
     
     <br />
     <hr />
-
-    <p>Algum rodapé aqui embaixo</p>
-
+    <p style="text-align: center;font-size: smaller;">
+        © Todos direitos nada reservados
+        <br>
+        <a href="https://www.linkedin.com/in/corcoviacaique" target="_blank">
+            Caique C. O. Corcovia
+        </a>
+    </p>
 </body>
