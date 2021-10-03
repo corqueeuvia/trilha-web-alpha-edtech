@@ -33,7 +33,7 @@
 <br />
 <p align="center">
   <a href="https://alphalumen.org.br/">
-    <img src="imagens/logo-instituto-alpha-lumen.png" alt="Logo" height="90">
+    <img src="https://i.ibb.co/j5Fs5Sw/logo-instituto-alpha-lumen.png" alt="Logo" height="90">
   </a>
 
   <h3 align="center">Trilha Web</h3>
@@ -74,7 +74,7 @@
 
 <p align="center">
     <a href="https://sejaalphaedtech.org.br/">
-        <img src="imagens/logo-alpha-edtech.png" alt="Logo" height="110">
+        <img src="https://i.ibb.co/9GqHDNn/logo-alpha-edtech.png" alt="Logo" height="110">
     </a>
 
 <p align="justify">
