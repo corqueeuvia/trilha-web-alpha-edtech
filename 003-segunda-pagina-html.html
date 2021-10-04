@@ -14,68 +14,27 @@
 <!--INÍCIO DO CÓDIGO-->
 
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <title>Lovelace</title>
 </head>
+
 <body style="margin: 0px;
              font-family: Arial, Helvetica, sans-serif;
              font-size:large;">
 
-<!--DEFINIÇÕES DE ESTILO DA PÁGINA-->
-<!--    <style>
-       body {
-           background-color: rgb(0,0,0);
-           color:seashell;
-           font-family: Arial, Helvetica, sans-serif;
-           font-size: large;
-       }
+<!-- ESTILO DOS LINKS  -->
+    <style>
+            a {
+                text-decoration: none;
+                color: rgb(5, 115, 99);
+            }
 
-       h1 {
-           color: rgba(5, 115, 99, 255);
-           text-align: center;
-       }
-       h2, p.subtitulo {
-        color: rgba(255,146,227,255);
-        text-align: center;
-       }
-       
-       p.citacao {
-           font-size: larger;
-           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-           font-style: italic;
-           text-align: center;
-       }
-
-       p.autor {
-           font-size: medium;
-           font-family: 'Courier New', Courier, monospace;
-           text-align: center;
-       }
-
-       a {color: rgba(5, 115, 99, 255)}
-
-
-
-    ESTILOS DA TABELA
-        table, th, td {
-          background-color: rgba(5, 115, 99, 255);
-          text-align: center;
-          color: #f5f5f5;
-        }
-
-        th, #periodo {
-          background-color: rgba(5,115,99, 0.548);
-          font-weight: bolder;
-          
-        }
-
-        #livre {
-          background-color: rgba(255, 89, 213, 0.637);
-        }
-
+            a:hover {
+                text-decoration: underline;
+            }
     </style>
--->
 
 <!--CABEÇALHO DA PÁGINA-->    
     <header style="background-color: black;
@@ -117,9 +76,17 @@
              color: lightgoldenrodyellow;">
         <summary>Índice</summary>
         <ul class="itens-indice">
-            <li><a href="#trilha-hard-skills">Trilha Hard Skills</a></li>
+            <li><a href="#trilha-hard-skills"
+                   style="color:rgb(15, 20, 20)">
+                  <b>Trilha Hard Skills</b>
+                </a>
+            </li>
             <ul>
-                <li><a href="#introducao-a-web">Introdução a Web</a></li>
+                <li><a href="#introducao-a-web"
+                       style="color:rgb(15, 20, 20)">
+                       <b>Introdução a Web</b>
+                    </a>
+                </li>
                 <ol>
                     <li>TCP, UDP, ICMP, ping e tracerout/tracert</li>
                     <li>IP (v4 e v6), NAT e whois</li>
@@ -127,20 +94,32 @@
                     <li>Arquiteturas, XML e JSON</li>
                     <li>Controle de versão</li>                   
                 </ol>
-                <li><a href="#front-end">Front-end</a></li>
+                <li><a href="#front-end"
+                       style="color:rgb(15, 20, 20)">
+                       <b>Front-end</b>
+                   </a>
+                </li>
                 <ol>
                     <li>Configuração de ambiente e primeiro HTML</li>
                     <li>Linguagem de notação HTML</li>
                 </ol>
             </ul>
-            <li><a href="#trilha-soft-skills">Trilha Soft Skills</a></li>
+            <li><a href="#trilha-soft-skills" 
+                   style="color:rgb(15, 20, 20)">
+                   <b>Trilha Soft Skills</b>
+                </a>
+            </li>
             <ol>
                 <li>Lifelong learning</li>
                 <li>Design thinking</li>
                 <li>Tripé da competência (CHA)R</li>
                 <li>Growth Hacking</li>
             </ol>
-            <li><a href="#agenda">Agenda da semana</a></li>
+            <li><a href="#agenda"
+                   style="color:rgb(15, 20, 20)">
+                   <b>Soft Skills>Agenda da semana</b>
+                </a>
+            </li>
             </ul>
         </ul>
     </details>   
@@ -636,6 +615,9 @@
 
 <!--RODAPÉ DA PÁGINA-->
 
+<div style="background-color: rgb(15, 20, 20);
+            color: lightgoldenrodyellow;
+            padding: 20px;">
     <p style="text-align: center;font-size: smaller;">
         © Todos direitos nada reservados
         <br>
@@ -643,4 +625,6 @@
             Caique C. O. Corcovia
         </a>
     </p>
+</div>
+
 </body>
