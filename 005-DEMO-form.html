@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <title>DEMO Form</title>
+</head>
+<body>
+  <form>
+  <h1>DEMO de elementos de entrada (input)</h1>
+  <p>Veja como funcionam os elementos do tipo <b>text, date, password, checkbox, range, submit</b> e <b>reset.</b></p>
+  <section>
+    <h2>Enquanto isso...</h2>
+    <fieldset>
+      <legend>...fale mais sobre você:</legend>
+      <p>
+      <label for="nome">
+        <span>Seu nome:</span>
+      </label>
+      <input type="text" id="nome" placeholder="(um campo tipo text)">
+    </p>
+    <p>
+    <label for="data">
+      <span>Data de nascimento:</span>
+    </label>
+    <input type="date" id="data">
+    <br>
+    (este é um campo tipo date, a propósito)
+    </p>    
+    <p>
+      <label for="senha">
+        <span>Senha para seu ♥: </span>
+      </label>
+      <input type="password" id="senha" placeholder="(um campo tipo password)">
+    </p>
+  </fieldset>
+  </section>
+  <section>
+    <p style="text-align:center">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">
+        <span>Li e entendi que <b>isso</b> é uma checkbox</span>
+      </label>
+    </p>
+    <fieldset>
+    <p>
+    Escolha <b>apenas 1</b> das opções abaixo: (pra isso serve o input tipo <b>radio</b>)
+    </p>
+     <ul>
+        <li>
+        <label for="opcao-1">
+          <input type="radio" id="opcao-1" name="opcoes" value="1" >
+          Me avise se alguém tiver a mesma senha do ♥
+          </label>
+        </li>
+        <li>
+        <label for="opcao-2">
+          <input type="radio" id="opcao-2" name="opcoes" value="2">
+          Já descobriram minha senha, obrigado pela oportunidade.
+        </label>
+        </li>
+        <li>
+        <label for="opcao-3">
+          <input type="radio" id="opcao-3" name="opcoes" value="3">
+          Nem tenho senha mais, o ♥ tá aberto!!
+        </label>
+        </li>
+        </ul>
+    </fieldset>
+    </section>
+  
+  <section>
+      <h2>Feedback</h2>
+      <p>
+      (você vai usar um elemento tipo <b>range</b> pra responder)
+      </p>
+      <p style="text-align: center">
+        <label for="feedback">Se divertiu com essa DEMO?</label>
+        <br>
+        Poquin<input type="range">Bagarai
+      </p>
+      
+  </section>
+  <p style="text-align:center">
+  <button type="submit">Um botão do tipo submit</button>
+  <button type="reset">Um botão do tipo reset</button>
+  </p>
+  </form>
+</body>
