@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <title>Pix-migs</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(1, 1, 59);
+            color: whitesmoke;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        header {
+            background-color:limegreen;
+            color:rgb(1, 1, 59);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+        header p {
+            font-weight: bolder;
+        }
+        h2, h3 {
+            color:limegreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+
+        }
+        .subtitulo {
+            color:palegreen
+        }
+        ul {
+            line-height:28pt;
+        }
+        a{
+            color: yellow;
+        }
+        div {
+            padding: 10px;
+        }
+
+        button {
+            background-color: limegreen;
+            color: indigo;
+            border-radius: 12px;
+            border-color: limegreen;
+            height: 50px;
+            font-weight: bolder;
+            font-size: large;
+        }
+        input {
+            line-height: 30px;
+        }
+
+    </style>
+
+    <header>
+        <h1>Pix migs</h1>
+        <p>Teste pix migs de amizade: você me faz um pix e, se formos migs, eu devolvo.</p>
+    </header>
+
+    <div style="float: left; width: 60%;">
+        <h2>Eu quem?</h2>
+        
+        <p class="subtitulo">Meu nome é <b>Caique</b> e vou te dar 3 motivos pra me fazer um pix mesmo sem ser migs:</p>
+        <ul>
+             <li>
+                <b>Vegetariano firmeza:</b> pode ter 100% de certeza que não vou fazer saduíche com seu pet, porque nem mesmo a morte socialmente aceitável eu uso como alimento.          
+            </li>
+            <li>
+                <b>Poliglota certificado:</b> falante fluente de português, inglês e merda. Português nativo, inglês certificado pela Wizard e merda com certificação de Número Dois.
+            </li>
+            <li>
+                <b>Gateiro de carteirinha:</b> sei que o único lugar onde a felicidade pura pode ser encontrada é na angulação perfeita que só orelhinhas de gatos atentos podem atingir. E <a href="https://youtu.be/-Z4jx5VMw8M">nesse vídeo</a> (veja com som!).
+            </li>
+            </ul>
+    </div>
+    
+    <div>
+        <figure style="clear: right;">
+            <a href="https://i.ibb.co/dPxZSSv/pixmigs.png">
+                <img src="https://i.ibb.co/dPxZSSv/pixmigs.png" height="300px" width="250px">
+            </a>
+            <figcaption>Essa carinha de migs!</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <h2>Formulário de devolução</h2>
+        <p class="subtitulo">Preencha com seus dados para receber seu pix de volta (se for o caso)</p>
+
+        <form>
+            <p>
+                <label for="nome">
+                    Nome:
+                    <input type="text" id="nome">
+                </label>
+            </p>
+            <p>Escolha sua chave pix:</p>
+            <ul>
+                <li>
+                <label for="cpf">
+                <input type="radio" id="cpf" name="chave-pix" value="cpf" >
+                CPF
+                </label>
+                </li>
+                <li>
+                <label for="email">
+                <input type="radio" id="email" name="chave-pix" value="email">
+                E-mail
+                </label>
+                </li>
+                <li>
+                <label for="celular">
+                <input type="radio" id="celular" name="chave-pix" value="celular">
+                Celular
+                </label>
+                </li>
+            </ul>
+            <p>
+                <label for="chave">
+                    Chave:
+                    <input type="text" id="chave">
+                </label>
+            </p>
+            <p>
+                <label for="feedback">O quanto pretende ter o pix devolvido?</label>
+                <br>
+                Pó-ficar    <input type="range">   Nem devia ter feito
+            </p>
+            
+        </form>
+    </div>
+
+    <div>
+        <h2>Teste de afinidade</h2>
+    <p class="subtitulo">Para analisar nosso nível de migscidade</p>
+
+
+    <form>
+        <p>
+            <input type="checkbox" id="migs">
+            <label for="migs">
+              <span>Eu nos considero, <b>sim</b>, migs!</span>
+            </label>
+        </p>
+        <p>
+            <label for="data">
+              <span>Qual minha data de nascimento?</span>
+            </label>
+            <input type="date" id="data">
+        </p>
+        <p>
+            <label for="senha">
+              <span>Faça uma senha seguindo a Tática Infalível e Inesquecível para Senhas Fortes desenvolvida por mim:</span>
+            </label>
+            <input type="password" id="senha" placeholder="(os critérios são simples!)">
+        </p>
+        <p style="text-align:center">
+            <button type="submit">Enviar e correr o risco de perder dinheiro</button>
+            <button type="reset">Apagar meus dados pra colocar os dados de um amigo</button>
+            </p>
+
+    </form>
+    </div>
+
+
+    
+
+
+
+    
+
+    
+    
+</body>
