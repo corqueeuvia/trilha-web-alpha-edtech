@@ -1,102 +1,158 @@
 <!-- PÁGINA DESENVOLVIDA PARA FINS DIDÁTICOS
 
     PROPOSTA:
-       1. Criar uma página HTML que possua:
-          a. Formatação de textos (ex.: "b", "strong", "i");
-          b. Adição de cores usando o atributo "style";
+    ✓   1. Criar uma página HTML que possua:
+    ✓      a. Formatação de textos (ex.: "b", "strong", "i");
+    ✓      b. Adição de cores usando o atributo "style";
     ✓      c. Textos clicáveis que direcionem para outra página usando a tag "a"; 
     ✓      d. Imagens que, ao ser clicadas, abram a imagem em uma nova aba usando o atributo "target";
     ✓      e. Uma tabela com no mínimo 4 linhas e 3 colunas usando a tag "table";
     ✓      f. Um comentário que não será exibido ao usuário.
-        2. Salvar os arquivos, testar no JSFiddle e publicar no repositório git.
+    ✓    2. Salvar os arquivos, testar no JSFiddle e publicar no repositório git.
 -->
 
 <!--INÍCIO DO CÓDIGO-->
 
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
-    <title>Lovelace</title>
+    <title>🎗 Lovelace</title>
 </head>
-<body>
 
-<!--DEFINIÇÕES DE ESTILO DA PÁGINA-->
-    <style>
-       body {
-           background-color: rgb(0,0,0);
-           color:seashell;
-           font-family: Arial, Helvetica, sans-serif;
-           font-size: large;
-       }
-
-       h1 {
-           color: rgba(5, 115, 99, 255);
-           text-align: center;
-       }
-       h2, p.subtitulo {
-        color: rgba(255,146,227,255);
+<style>
+    body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:large;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(5, 115, 99);
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    header {
+        margin: 0 auto;
+        background-color: black;
         text-align: center;
-       }
-       
-       p.citacao {
-           font-size: larger;
-           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-           font-style: italic;
-           text-align: center;
-       }
+        padding: 10px
+    }
+    h1 {
+        color:rgb(5, 115, 99);
+    }
+    #logo-edtech {
+        float: right;
+        width: 194px;
+        height: 110px;
+    }
+    #logo-lovelace {
+        float: left;
+        width: 194px;
+       height: 150px;
+    }
+    h2 {
+        color: rgb(255,146,227);
+    }
+    .sub-principal {
+        color:lightgoldenrodyellow;
+        width: 80%;
+    }
+    details {
+        background-color: rgba(5, 115, 99);
+        padding: 50px;
+        color: lightgoldenrodyellow;
+    }
+    .link-indice {
+        color: black;
+    }
+    #intro {
+        background-color: rgb(15, 20, 20);
+        text-align: center;
+        padding: 10px;
+    }
+    p.sub-intro {
+        color:rgb(255,146,227);
+    }
+    .citacao {
+        color: lightgoldenrodyellow;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+        font-style: italic;
+    }
+    .autor {
+        color: lightgoldenrodyellow;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: smaller;
+    }
+    .lista-materiais, #agenda {
+        background-color: rgb(15, 20, 20);
+        color:lightgoldenrodyellow;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    table {
+        width:100%;
+        height:250px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #cabecalho-tabela {
+        /*background-color: rgba(5, 115, 98, 0.498);*/
+        height: 16%;
+    }
+    .coluna-1 {
+        width: 9%;
+        background-color: rgba(5, 115, 98, 0.498);
+        
+    }
+    .coluna-2, .coluna-3, .coluna-4, .coluna-5, .coluna-6, .coluna-7, .coluna-8 {
+        width: 13%;
+        background-color: rgba(5, 115, 98, 0.498);
+    }
+    .linhas-tabela {
+        height: 28%;
+    }
+    footer {
+        background-color: rgb(15, 20, 20);
+        color: lightgoldenrodyellow;
+        padding: 20px;
+    }
+    footer>p {
+        text-align: center;font-size: smaller;
+    }
+</style>
 
-       p.autor {
-           font-size: medium;
-           font-family: 'Courier New', Courier, monospace;
-           text-align: center;
-       }
-
-       a {color: rgba(5, 115, 99, 255)}
-
-
-
-    <!--ESTILOS DA TABELA-->
-        table, th, td {
-          background-color: rgba(5, 115, 99, 255);
-          text-align: center;
-          color: #f5f5f5;
-        }
-
-        th, #periodo {
-          background-color: rgba(5,115,99, 0.548);
-          font-weight: bolder;
-          
-        }
-
-        #livre {
-          background-color: rgba(255, 89, 213, 0.637);
-        }
-
-    </style>
+<body>
 
 <!--CABEÇALHO DA PÁGINA-->    
     <header>
         <h1>
+            Alpha EdTech
             <a href="https://i.ibb.co/9GqHDNn/logo-alpha-edtech.png" target="_blank">
                 <img src="https://i.ibb.co/9GqHDNn/logo-alpha-edtech.png" 
                  alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares."
-                 style="float:right;width:194px;height:110px">
+                 id="logo-edtech">
             </a>
             <a href="https://i.ibb.co/tJWbDLD/logo-turma-lovelace.png" target="_blank">
                 <img src="https://i.ibb.co/tJWbDLD/logo-turma-lovelace.png" 
                  alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares."
-                 style="float:left;width100px;height:100px">
+                 id="logo-lovelace">
             </a>
-            Alpha EdTech
+           
         </h1>
     
         <h2>Turma Lovelace</h2>
         
-        <p class="subtitulo">Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech<p>
-        
-       <hr />
+        <p class="sub-principal">
+           Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech
+        </p>
 
-       <p align="right">
+       <p>
            <a href="https://www.alphaedtech.org.br/">+ sobre o projeto Alpha EdTech</a>
            <br />
            <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace">+ sobre o nome da turma Lovelace</a>
@@ -107,9 +163,15 @@
     <details open="open">
         <summary>Índice</summary>
         <ul class="itens-indice">
-            <li><a href="#trilha-hard-skills">Trilha Hard Skills</a></li>
+            <li><a href="#trilha-hard-skills" class="link-indice">
+                  <b>Trilha Hard Skills</b>
+                </a>
+            </li>
             <ul>
-                <li><a href="#introducao-a-web">Introdução a Web</a></li>
+                <li><a href="#introducao-a-web" class="link-indice">
+                       <b>Introdução a Web</b>
+                    </a>
+                </li>
                 <ol>
                     <li>TCP, UDP, ICMP, ping e tracerout/tracert</li>
                     <li>IP (v4 e v6), NAT e whois</li>
@@ -117,499 +179,503 @@
                     <li>Arquiteturas, XML e JSON</li>
                     <li>Controle de versão</li>                   
                 </ol>
-                <li><a href="#front-end">Front-end</a></li>
+                <li><a href="#front-end" class="link-indice">
+                       <b>Front-end</b>
+                   </a>
+                </li>
                 <ol>
                     <li>Configuração de ambiente e primeiro HTML</li>
                     <li>Linguagem de notação HTML</li>
                 </ol>
             </ul>
-            <li><a href="#trilha-soft-skills">Trilha Soft Skills</a></li>
+            <li><a href="#trilha-soft-skills" class="link-indice">
+                   <b>Trilha Soft Skills</b>
+                </a>
+            </li>
             <ol>
                 <li>Lifelong learning</li>
                 <li>Design thinking</li>
                 <li>Tripé da competência (CHA)R</li>
                 <li>Growth Hacking</li>
             </ol>
-            <li><a href="#agenda">Agenda da semana</a></li>
+            <li><a href="#agenda" class="link-indice">
+                   <b>Agenda da semana</b>
+                </a>
+            </li>
             </ul>
         </ul>
-        <hr />
     </details>   
     
 <!--INÍCIO DAS LISTAS DE MATERIAIS POR TRILHA-->
 
     <!--INTRODUÇÃO PARA TRILHA HARD SKILLS-->
 
-    <h2 id="trilha-hard-skills">Trilha Hard Skills</h2>
-    <p class="subtitulo">Materiais para desenvolvimento técnico</p>
-    <p class="citacao">"Pra não sair falando besteira por aí."</p>
-    <p class="autor">TANIGUCHI, Kenji (2021)</p>
+    <section id="intro">
+        <h2>Trilha Hard Skills</h2>
+        <p class="sub-intro">Materiais para desenvolvimento técnico</p>
+        <p class="citacao">
+            "Pra não sair falando besteira por aí."
+        </p>
+        <p class="autor">
+            TANIGUCHI, Kenji (2021)
+        </p>
+    </section>
 
-    <!--TRILHA HARD: WEB-->
+    <!--TRILHA HARD: LISTA DE MATERIAIS -->
 
-    <h3 id="introducao-a-web">Introdução a Web</h3>
+   <section class="lista-materiais">
 
-    <ol>
-        <li>TCP, UDP, ICMP, ping e tracerout/tracert</li>
-        <ul>
-            <li>
-                <a href="https://datatracker.ietf.org/doc/html/rfc793">
-                    RFC 793
-                </a>
-            </li>
-            <li>
-                <a href="https://www.meridianoutpost.com/resources/articles/well-known-tcpip-ports.php">
-                    Portas conhecidas TCP/IP
-                </a>
-            </li>
-            <li>
-                <a href="https://datatracker.ietf.org/doc/html/rfc768">
-                    RFC 768
-                </a>
-            </li>
-            <li>
-                <a href="https://datatracker.ietf.org/doc/html/rfc792">
-                    RFC 792
-                </a>
-            </li>            
-            <li>
-                <a href="https://hub.packtpub.com/understanding-network-port-numbers-tcp-udp-and-icmp-on-an-operating-system/">
-                    Portas, TCP, UDP e ICMP no Sistema Operacional
-                </a>
-            </li>            
-            <li>
-                <a href="https://man.cx/ping(1)">
-                    ping
-                </a>
-            </li>            
-            <li>
-                <a href="https://www.ibm.com/docs/en/aix/7.2?topic=t-traceroute-command">
-                    Traceroute command (IBM)
-                </a>
-            </li>            
-            <li>
-                <a href="https://support.microsoft.com/en-us/topic/how-to-use-tracert-to-troubleshoot-tcp-ip-problems-in-windows-e643d72b-2f4f-cdd6-09a0-fd2989c7ca8e">
-                    Tracert (Microsoft)
-                </a>
-            </li>
-        </ul>
-        <li>IP (v4 e v6), NAT e whois</li>
-        <ul>
-            <li>
-                <a href="https://www.lacnic.net/820/3/lacnic/2-enderecos-ipv4">
-                    IPv4
-                </a>
-            </li>
-            <li>
-                <a href="https://www.lacnic.net/3067/3/lacnic/implementa-ipv6">
-                    IPv6
-                </a>
-            </li>
-            <li>
-                <a href="https://anchor.fm/camada8/episodes/Rumo-ao-IPv6-Brasil-ei20ng/a-a2u7kts">
-                    Poadcast Camada 8 - Rumo ao IPv6, Brasil!
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=dkVHgQDRLxE">
-                    Live do NIC.br
-                </a>
-            </li>
-            <li>
-                <a href="https://pt.wikipedia.org/wiki/Rede_privada">
-                    Endereços IP públicos e privados
-                </a>
-            </li>
-            <li>
-                <a href="https://tools.ietf.org/html/rfc2663">
-                    RFC 2663
-                </a>
-            </li>
-            <li>
-                <a href="https://registro.br/tecnologia/ferramentas/whois/">
-                    whois
-                </a>
-                <ul>
-                    <li>
-                        <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/whois">
-                           Windows
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-whois/">
-                            Linux
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.techrepublic.com/article/how-to-master-macos-whois-command-basics/#:~:text=To%20perform%20a%20whois%20search,name%20you%20wish%20to%20check.">
-                            Mac
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <li>DNS e registro de domínio .br</li>
-        <ul>
-            <li>
-                <a href="https://datatracker.ietf.org/doc/html/rfc1034">
-                    RFC 1034
-                </a>
-            </li>
-            <li>
-                <a href="https://datatracker.ietf.org/doc/html/rfc1035">
-                    RFC 1035
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=epWv0-eqRMw">
-                    A importância do DNS, explicada pelo NIC.br
-                </a>
-            </li>
-            <li>
-                <a href="https://canaltech.com.br/internet/veja-como-escolher-o-melhor-servidor-dns-para-acelerar-sua-navegacao/">
-                    Servidores DNS públicos
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=gZRYDxWuYpk">
-                    Como registrar um domínio .br?
-                </a>
-            </li>
-            <li>
-                <a href="https://man.cx/nslookup">
-                    nslookup
-                </a>
-            </li>
-            <li>
-                <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup">
-                    nslookup (Windows)
-                </a>
-            </li>
-        </ul>
-        <li>Arquiteturas, XML e JSON</li>
-        <ul>
-            <li>
-                <a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor">
-                    Arquitetura cliente-servidor
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=SEC-tbKa1KQ">
-                    Arquitetura da Web (PUC Minas Virtual)
-                </a>
-            </li>
-            <li>
-                <a href="https://pt.wikipedia.org/wiki/Modelo_em_tr%C3%AAs_camadas">
-                    Modelo em três camadas
-                </a>
-            </li>
-            <li>
-                <a href="https://www.ibm.com/support/knowledgecenter/ptbr/SS7K4U_9.0.5/com.ibm.websphere.zseries.doc/ae/covr_3- tier.html">
-                    IBM - Modelo em três camadas
-                </a>
-            </li>
-            <li>
-                <a href="https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-service-oriented-architecture">
-                    SOA - Arquitetura Orientada a Serviços
-                </a>
-            </li>
-            <li>
-                <a href="https://www.redhat.com/pt-br/topics/microservices">
-                    Arquitetura de microsserviços (RedHat)
-                </a>
-            </li>
-            <li>
-                <a href="https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices">
-                    Arquitetura de microsserviços (Microsoft)
-                </a>
-            </li>
-            <li>
-                <a href="https://www.devmedia.com.br/web-services/2873">
-                    Web services
-                </a>
-                <ul>
-                    <li>
-                        <a href="https://portal.tcu.gov.br/webservices-tcu/">
-                            Exemplo 1
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dados-abertos.apps.tcu.gov.br/api/acordao/recupera-acordaos?inicio=001&quantidade=2">
-                            Exemplo 2
-                        </a>
-                    </li>
-                </ul>
+        <!-- WEB -->
+
+        <h3 id="introducao-a-web">Introdução a Web</h3>
+
+        <ol>
+            <li>TCP, UDP, ICMP, ping e tracerout/tracert</li>
+            <ul>
                 <li>
-                    <a href="https://www.w3.org/XML/">
-                        XML
+                    <a href="https://datatracker.ietf.org/doc/html/rfc793">
+                        RFC 793
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.json.org/json-en.html">
-                        JSON
+                    <a href="https://www.meridianoutpost.com/resources/articles/well-known-tcpip-ports.php">
+                        Portas conhecidas TCP/IP
                     </a>
                 </li>
-        </ul>
-        <li>Controle de versão - Início</li>
-        <ul>
-            <li>
-                <a href="https://www.youtube.com/watch?v=8MsYOAnU1eY">
-                    Sistema de controle de versão - Canal TI
-                </a>
-            </li>
-            <li>
-                <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o">
-                    Git - Sobre controle de versão
-                </a>
-            </li>
-            <li>
-                <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git">
-                    Git - Uma breve história do Git
-                </a>
-            </li>
-            <li>
-                <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git">
-                    Git - O básico do Git
-                </a>
-            </li>
-            <li>
-                <a href="https://git-scm.com/downloads">
-                    Instale o Git Bash
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/signup">
-                    Crie sua conta no GitHub
-                </a>
-            </li>
-        </ul>
-        <li>Controle de versão - Primeiros passos com Git</li>
-        <ul>
-            <li>
-                <a href="https://www.youtube.com/watch?v=6Czd1Yetaac">
-                    Entendendo Git - Não é um tutorial!
-                </a>
-            </li>
-            <li>
-                <a href="https://rogerdudler.github.io/git-guide/index.pt_BR.html">
-                    Git - Guia prático
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=DqTITcMq68k">
-                    Rafaella Ballerini - O que é Git e GitHub
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=UBAX-13g8OM">
-                    Rafaella Ballerini - Como usar Git e GitHub na prática
-                </a>
-            </li>
-            <li>
-                <a href="https://git-scm.com/docs/gitignore">
-                    .gitignore
-                </a>
-            </li>
-            <li>
-                <a href="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">
-                    README.md
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/othneildrew/Best-README-Template">
-                    Template de README no GitHub
-                </a>
-            </li>
-        </ul>
-    </ol>
+                <li>
+                    <a href="https://datatracker.ietf.org/doc/html/rfc768">
+                        RFC 768
+                    </a>
+                </li>
+                <li>
+                    <a href="https://datatracker.ietf.org/doc/html/rfc792">
+                        RFC 792
+                    </a>
+                </li>            
+                <li>
+                    <a href="https://hub.packtpub.com/understanding-network-port-numbers-tcp-udp-and-icmp-on-an-operating-system/">
+                        Portas, TCP, UDP e ICMP no Sistema Operacional
+                    </a>
+                </li>            
+                <li>
+                    <a href="https://man.cx/ping(1)">
+                        ping
+                    </a>
+                </li>            
+                <li>
+                    <a href="https://www.ibm.com/docs/en/aix/7.2?topic=t-traceroute-command">
+                        Traceroute command (IBM)
+                    </a>
+                </li>            
+                <li>
+                    <a href="https://support.microsoft.com/en-us/topic/how-to-use-tracert-to-troubleshoot-tcp-ip-problems-in-windows-e643d72b-2f4f-cdd6-09a0-fd2989c7ca8e">
+                        Tracert (Microsoft)
+                    </a>
+                </li>
+            </ul>
+            <li>IP (v4 e v6), NAT e whois</li>
+            <ul>
+                <li>
+                    <a href="https://www.lacnic.net/820/3/lacnic/2-enderecos-ipv4">
+                        IPv4
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.lacnic.net/3067/3/lacnic/implementa-ipv6">
+                        IPv6
+                    </a>
+                </li>
+                <li>
+                    <a href="https://anchor.fm/camada8/episodes/Rumo-ao-IPv6-Brasil-ei20ng/a-a2u7kts">
+                        Podcast Camada 8 - Rumo ao IPv6, Brasil!
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=dkVHgQDRLxE">
+                        Live do NIC.br
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Rede_privada">
+                        Endereços IP públicos e privados
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tools.ietf.org/html/rfc2663">
+                        RFC 2663
+                    </a>
+                </li>
+                <li>
+                    <a href="https://registro.br/tecnologia/ferramentas/whois/">
+                        whois
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/whois">
+                            Windows
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-whois/">
+                                Linux
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.techrepublic.com/article/how-to-master-macos-whois-command-basics/#:~:text=To%20perform%20a%20whois%20search,name%20you%20wish%20to%20check.">
+                                Mac
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <li>DNS e registro de domínio .br</li>
+            <ul>
+                <li>
+                    <a href="https://datatracker.ietf.org/doc/html/rfc1034">
+                        RFC 1034
+                    </a>
+                </li>
+                <li>
+                    <a href="https://datatracker.ietf.org/doc/html/rfc1035">
+                        RFC 1035
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=epWv0-eqRMw">
+                        A importância do DNS, explicada pelo NIC.br
+                    </a>
+                </li>
+                <li>
+                    <a href="https://canaltech.com.br/internet/veja-como-escolher-o-melhor-servidor-dns-para-acelerar-sua-navegacao/">
+                        Servidores DNS públicos
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=gZRYDxWuYpk">
+                        Como registrar um domínio .br?
+                    </a>
+                </li>
+                <li>
+                    <a href="https://man.cx/nslookup">
+                        nslookup
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup">
+                        nslookup (Windows)
+                    </a>
+                </li>
+            </ul>
+            <li>Arquiteturas, XML e JSON</li>
+            <ul>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor">
+                        Arquitetura cliente-servidor
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=SEC-tbKa1KQ">
+                        Arquitetura da Web (PUC Minas Virtual)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Modelo_em_tr%C3%AAs_camadas">
+                        Modelo em três camadas
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ibm.com/support/knowledgecenter/ptbr/SS7K4U_9.0.5/com.ibm.websphere.zseries.doc/ae/covr_3- tier.html">
+                        IBM - Modelo em três camadas
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-service-oriented-architecture">
+                        SOA - Arquitetura Orientada a Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.redhat.com/pt-br/topics/microservices">
+                        Arquitetura de microsserviços (RedHat)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices">
+                        Arquitetura de microsserviços (Microsoft)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.devmedia.com.br/web-services/2873">
+                        Web services
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="https://portal.tcu.gov.br/webservices-tcu/">
+                                Exemplo 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dados-abertos.apps.tcu.gov.br/api/acordao/recupera-acordaos?inicio=001&quantidade=2">
+                                Exemplo 2
+                            </a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="https://www.w3.org/XML/">
+                            XML
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.json.org/json-en.html">
+                            JSON
+                        </a>
+                    </li>
+            </ul>
+            <li>Controle de versão - Início</li>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=8MsYOAnU1eY">
+                        Sistema de controle de versão - Canal TI
+                    </a>
+                </li>
+                <li>
+                    <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o">
+                        Git - Sobre controle de versão
+                    </a>
+                </li>
+                <li>
+                    <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git">
+                        Git - Uma breve história do Git
+                    </a>
+                </li>
+                <li>
+                    <a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git">
+                        Git - O básico do Git
+                    </a>
+                </li>
+                <li>
+                    <a href="https://git-scm.com/downloads">
+                        Instale o Git Bash
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/signup">
+                        Crie sua conta no GitHub
+                    </a>
+                </li>
+            </ul>
+            <li>Controle de versão - Primeiros passos com Git</li>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=6Czd1Yetaac">
+                        Entendendo Git - Não é um tutorial!
+                    </a>
+                </li>
+                <li>
+                    <a href="https://rogerdudler.github.io/git-guide/index.pt_BR.html">
+                        Git - Guia prático
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=DqTITcMq68k">
+                        Rafaella Ballerini - O que é Git e GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=UBAX-13g8OM">
+                        Rafaella Ballerini - Como usar Git e GitHub na prática
+                    </a>
+                </li>
+                <li>
+                    <a href="https://git-scm.com/docs/gitignore">
+                        .gitignore
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">
+                        README.md
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/othneildrew/Best-README-Template">
+                        Template de README no GitHub
+                    </a>
+                </li>
+            </ul>
+        </ol>
 
-    <!--TRILHA HARD: FRONT-END-->
+        <!-- FRONT-END-->
+    
+        <h3 id="front-end">Front-end</h3>
 
-    <h3 id="front-end">Front-end</h3>
+            <ol>
+                <li>Configuração de ambiente e primeiro HTML</li>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/intl/pt-BR/chrome/">
+                            Instale o Google Chrome
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/pt-BR/firefox/new/">
+                            Instale o Mozilla Firefox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/br/safari/">
+                            Instale o Apple Safari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.opera.com/pt-br">
+                            Instale o Opera
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://code.visualstudio.com/">
+                            Instale o Visual Studio Code
+                        </a>
+                    </li>
+                </ul>
+                <li>Linguagem de notação HTML</li>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                            Tutorial HTML básico
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jsfiddle.net/">
+                            JSFiddle
+                        </a>
+                    </li>
+                </ul>
+            </ol>
+   </section>
 
-    <ol>
-        <li>Configuração de ambiente e primeiro HTML</li>
-        <ul>
-            <li>
-                <a href="https://www.google.com/intl/pt-BR/chrome/">
-                    Instale o Google Chrome
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/pt-BR/firefox/new/">
-                    Instale o Mozilla Firefox
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/br/safari/">
-                    Instale o Apple Safari
-                </a>
-            </li>
-            <li>
-                <a href="https://www.opera.com/pt-br">
-                    Instale o Opera
-                </a>
-            </li>
-            <li>
-                <a href="https://code.visualstudio.com/">
-                    Instale o Visual Studio Code
-                </a>
-            </li>
-        </ul>
-        <li>Linguagem de notação HTML</li>
-        <ul>
-            <li>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">
-                    Tutorial HTML básico
-                </a>
-            </li>
-            <li>
-                <a href="https://jsfiddle.net/">
-                    JSFiddle
-                </a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form">
-                    MDN - Meu primeiro formulário HTML
-                </a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form">
-                    MDN - Como estruturar um formulário HTML
-                </a>
-            </li>
-            <li>
-                <a href="https://alistapart.com/article/sensibleforms/#">
-                    A list apart - Sensible Forms: A Form Usability Checklist 
-                </a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input">
-                    MDN - O elemento &ltinput&gt 
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=MKSQYsLLFEo">
-                    HTML Forms - Learn 18 HTML Input Types | HTML5 (2020)
-                </a>
-            </li>
-            <li>
-                <a href="https://ogp.me/">
-                    Open Graph
-                </a>
-            </li>
-        </ul>
-    </ol>
+    <!--INTRODUÇÃO PARA TRILHA SOFT SKILLS-->
 
-    <!--INTRODUÇÃO PARA TRILHA DOFT SKILLS-->
-
-    <h2 id="trilha-soft-skills">Trilha Soft Skills</h2>
-    <p class="subtitulo">Materiais para desenvolvimento pessoal</p>
-    <p class="citacao">"O hard pode até colocar o cara na empresa, mas a falta do soft tira."</p>
-    <p class="autor">LÁZARI, Paulo (2021)</p>
+    <section class="intro" style="background-color: rgb(15, 20, 20);
+                text-align: center;
+                padding: 10px;">
+        <h2>Trilha Soft Skills</h2>
+        <p class="sub-intro">
+            Materiais para desenvolvimento pessoal
+        </p>
+        <p class="citacao">
+            "O hard pode até colocar o cara na empresa, mas a falta do soft tira."
+        </p>
+        <p class="autor">
+            LÁZARI, Paulo (2021)
+        </p>
+    </section>
 
     <!--TRILHA SOFT: MATERIAIS-->
 
-    <ol>
-        <li>Lifelong learning</li>
-        <ul>
-            <li>
-                <a href="https://exame.com/carreira/o-que-e-o-lifelong-learning-e-por-que-ele-e-essencial-na-carreira/">
-                    Exame.com - O que é "lifelong learning" e porque ele é essencial na carreira
-                </a>
-            </li>
-            <li>
-                <a href="https://vocesa.abril.com.br/carreira/lifelong-learning-entenda-porque-o-aprendizado-nao-tem-data-para-acabar/">
-                    VC S/A - Lifelong Learning: o desafio de ser um eterno aprendiz
-                </a>
-            </li>
-        </ul>
-        <li>Design thinking</li>
-        <ul>
-            <li>
-                <a href="https://endeavor.org.br/tecnologia/design-thinking-inovacao/">
-                    Endeavor - Design Thinking: ferramenta de inovação para empreendedoras e empreendedores
-                </a>
-            </li>
-            <li>
-                <a href="https://www.sebrae.com.br/sites/PortalSebrae/artigos/design-thinking-inovacao-pela-criacao-de-valor-para-o-cliente,c06e9889ce11a410VgnVCM1000003b74010aRCRD">
-                    SEBRAE - Entenda o conceito de design thinking e como aplicá-lo aos negócios
-                </a>
-            </li>
-        </ul>
-        <li>Tripé da competência (CHA)R</li>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/pulse/trip%C3%A9-das-compet%C3%AAncias-cha-andr%C3%A9-schwambach-lira/?originalSubdomain=pt">
-                    André Schwambach Lira - Tripé das competências: CHA
-                </a>
-            </li>
-            <li>
-                <a href="https://jrmcoaching.com.br/blog/cha-conhecimento-habilidade-atitude-elementos-essenciais-carreira-sucesso/">
-                    JRM Coaching - Conhecimento, Habilidade e Atitude: elementos essenciais para uma carreira de sucesso
-                </a>
-            </li>
-        </ul>
-        <li>Growth Hacking</li>
-        <ul>
-            <li>
-                <a href="https://www.youtube.com/watch?v=SBELddM5g5Y">
-                    Growth Leaders Academy - O que é Growth Hacking
-                </a>
-            </li>
-        </ul>
-    </ol>
-
-    <hr />
+    <section class="lista-materiais">
+        <h3>*Materiais não-oficiais</h3>
+        <ol>
+            <li>Lifelong learning</li>
+            <ul>
+                <li>
+                    <a href="https://exame.com/carreira/o-que-e-o-lifelong-learning-e-por-que-ele-e-essencial-na-carreira/">
+                        Exame.com - O que é "lifelong learning" e porque ele é essencial na carreira
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vocesa.abril.com.br/carreira/lifelong-learning-entenda-porque-o-aprendizado-nao-tem-data-para-acabar/">
+                        VC S/A - Lifelong Learning: o desafio de ser um eterno aprendiz
+                    </a>
+                </li>
+            </ul>
+            <li>Design thinking</li>
+            <ul>
+                <li>
+                    <a href="https://endeavor.org.br/tecnologia/design-thinking-inovacao/">
+                        Endeavor - Design Thinking: ferramenta de inovação para empreendedoras e empreendedores
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sebrae.com.br/sites/PortalSebrae/artigos/design-thinking-inovacao-pela-criacao-de-valor-para-o-cliente,c06e9889ce11a410VgnVCM1000003b74010aRCRD">
+                        SEBRAE - Entenda o conceito de design thinking e como aplicá-lo aos negócios
+                    </a>
+                </li>
+            </ul>
+            <li>Tripé da competência (CHA)R</li>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/pulse/trip%C3%A9-das-compet%C3%AAncias-cha-andr%C3%A9-schwambach-lira/?originalSubdomain=pt">
+                        André Schwambach Lira - Tripé das competências: CHA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jrmcoaching.com.br/blog/cha-conhecimento-habilidade-atitude-elementos-essenciais-carreira-sucesso/">
+                        JRM Coaching - Conhecimento, Habilidade e Atitude: elementos essenciais para uma carreira de sucesso
+                    </a>
+                </li>
+            </ul>
+            <li>Growth Hacking</li>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=SBELddM5g5Y">
+                        Growth Leaders Academy - O que é Growth Hacking
+                    </a>
+                </li>
+            </ul>
+        </ol>
+    </section>
 
 <!--AGENDA DA SEMANA-->
-
-    <h2 id="agenda">Agenda da semana 4-10/10</h2>
-
-    <!--TABELA: AGENDA DA SEMANA-->
     
-    <table style="width:100%;height:250px">
-      <tr height="16%">
-        <th width="9%">HORA/DIA</th>
-        <th width="13%">SEG</th>
-        <th width="13%">TER</th>
-        <th width="13%">QUA</th>
-        <th width="13%">QUI</th>
-        <th width="13%">SEX</th>
-        <th width="13%">SÁB</th>
-        <th width="13%">DOM</th>
-      </tr>
-      <tr height="28%">
-        <td id="periodo">MANHÃ</td>
-        <td colspan=5> 6h-8h Redes Alura <br /> 8h-10h Linux Alura <br /> 10h-11h Monitoria </td>
-        <td> 8h-10h Inglês </td>
-        <td id="livre" rowspan=3> Livre para sentar a bunda na cadeira e estudar </td>
+    <section id="agenda">
+
+        <h2>Agenda da semana 4-10/10</h2>
+
+        <!--TABELA: AGENDA DA SEMANA-->
     
-      </tr>
-      <tr height="28%">
-        <td id="periodo">TARDE</td>
-        <td colspan=3> 14h30-16h Trilha hard - Web </td>
-        <td colspan=2> 14h30-16h Trilha hard - Web <br /> 17h30-19h Trilha soft - EdTech </td>
-        <td id="livre" rowspan=2> Livre para sentar a bunda na cadeira e estudar </td>
-      </tr>
-      <tr height="28%">
-        <td id="periodo">NOITE</td>
-        <td id="livre" colspan=4> Livre para sentar a bunda na cadeira e estudar </td>
-        <td>18h-19h Trilha soft - Empresa Parceira</td>
-      </tr>
-    </table>
+        <table>
+        <tr id="cabecalho-tabela">
+            <th class="coluna-1">HORA/DIA</th>
+            <th class="coluna-2">SEG</th>
+            <th class="coluna-3">TER</th>
+            <th class="coluna-4">QUA</th>
+            <th class="coluna-5">QUI</th>
+            <th class="coluna-6">SEX</th>
+            <th class="coluna-7">SÁB</th>
+            <th class="coluna-8">DOM</th>
+        </tr>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">MANHÃ</td>
+            <td colspan=5
+                style="background-color: rgb(5, 115, 99)">
+                6h-8h Redes Alura <br /> 8h-10h Linux Alura <br /> 10h-11h Monitoria 
+           </td>
+            <td style="background-color: rgb(5, 115, 99)"> 8h-10h Inglês </td>
+            <td id="livre" rowspan=3 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
+        
+        </tr>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">TARDE</td>
+            <td style="background-color: rgb(5, 115, 99)" colspan=3> 14h30-16h Trilha hard - Web </td>
+            <td style="background-color: rgb(5, 115, 99)" colspan=2> 14h30-16h Trilha hard - Web <br /> 17h30-19h Trilha soft - EdTech </td>
+            <td id="livre" rowspan=2 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
+        </tr>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">NOITE</td>
+            <td id="livre" colspan=4 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
+            <td style="background-color: rgb(5, 115, 99)">18h-19h Trilha soft - Empresa Parceira</td>
+        </tr>
+        </table>
+    </section>
 
 <!--RODAPÉ DA PÁGINA-->
 
-    <br />
-    
-    <hr />
-
-    <p style="text-align: center;font-size: smaller;">
+<footer>
+    <p>
         © Todos direitos nada reservados
         <br>
         <a href="https://www.linkedin.com/in/corcoviacaique" target="_blank">
             Caique C. O. Corcovia
         </a>
     </p>
+</footer>
 </body>
