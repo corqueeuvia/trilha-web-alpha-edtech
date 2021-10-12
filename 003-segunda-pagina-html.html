@@ -17,50 +17,140 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Lovelace</title>
+    <title>🎗 Lovelace</title>
 </head>
 
-<body style="margin: 0px;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size:large;">
+<style>
+    body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:large;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(5, 115, 99);
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    header {
+        margin: 0 auto;
+        background-color: black;
+        text-align: center;
+        padding: 10px
+    }
+    h1 {
+        color:rgb(5, 115, 99);
+    }
+    #logo-edtech {
+        float: right;
+        width: 194px;
+        height: 110px;
+    }
+    #logo-lovelace {
+        float: left;
+        width: 194px;
+       height: 150px;
+    }
+    h2 {
+        color: rgb(255,146,227);
+    }
+    .sub-principal {
+        color:lightgoldenrodyellow;
+        width: 80%;
+    }
+    details {
+        background-color: rgba(5, 115, 99);
+        padding: 50px;
+        color: lightgoldenrodyellow;
+    }
+    .link-indice {
+        color: black;
+    }
+    #intro {
+        background-color: rgb(15, 20, 20);
+        text-align: center;
+        padding: 10px;
+    }
+    p.sub-intro {
+        color:rgb(255,146,227);
+    }
+    .citacao {
+        color: lightgoldenrodyellow;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+        font-style: italic;
+    }
+    .autor {
+        color: lightgoldenrodyellow;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: smaller;
+    }
+    .lista-materiais, #agenda {
+        background-color: rgb(15, 20, 20);
+        color:lightgoldenrodyellow;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    table {
+        width:100%;
+        height:250px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #cabecalho-tabela {
+        /*background-color: rgba(5, 115, 98, 0.498);*/
+        height: 16%;
+    }
+    .coluna-1 {
+        width: 9%;
+        background-color: rgba(5, 115, 98, 0.498);
+        
+    }
+    .coluna-2, .coluna-3, .coluna-4, .coluna-5, .coluna-6, .coluna-7, .coluna-8 {
+        width: 13%;
+        background-color: rgba(5, 115, 98, 0.498);
+    }
+    .linhas-tabela {
+        height: 28%;
+    }
+    footer {
+        background-color: rgb(15, 20, 20);
+        color: lightgoldenrodyellow;
+        padding: 20px;
+    }
+    footer>p {
+        text-align: center;font-size: smaller;
+    }
+</style>
 
-<!-- ESTILO DOS LINKS  -->
-    <style>
-            a {
-                text-decoration: none;
-                color: rgb(5, 115, 99);
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-    </style>
+<body>
 
 <!--CABEÇALHO DA PÁGINA-->    
-    <header style="background-color: black;
-            text-align: center;
-            padding: 10px">
-        <h1 style="color:rgb(5, 115, 99)">
+    <header>
+        <h1>
             Alpha EdTech
             <a href="https://i.ibb.co/9GqHDNn/logo-alpha-edtech.png" target="_blank">
                 <img src="https://i.ibb.co/9GqHDNn/logo-alpha-edtech.png" 
                  alt="O logo do projeto EdTech é um triângulo branco dentro de um brasão verde entre colchetes angulares."
-                 style="float:right;width:194px;height:110px">
+                 id="logo-edtech">
             </a>
             <a href="https://i.ibb.co/tJWbDLD/logo-turma-lovelace.png" target="_blank">
                 <img src="https://i.ibb.co/tJWbDLD/logo-turma-lovelace.png" 
                  alt="O logo da turma Lovelace tem forma de coração verde e rosa com fundo preto e entre colchetes angulares."
-                 style="float:left;width194px;height:110px">
+                 id="logo-lovelace">
             </a>
            
         </h1>
     
-        <h2 style="color: rgb(255,146,227);">Turma Lovelace</h2>
+        <h2>Turma Lovelace</h2>
         
-        <p class="subtitulo"
-           style="color:lightgoldenrodyellow">
+        <p class="sub-principal">
            Esta página organiza todos os conteúdos vistos até hoje pela turma Lovelace no projeto Alpha EdTech
-        <p>
+        </p>
 
        <p>
            <a href="https://www.alphaedtech.org.br/">+ sobre o projeto Alpha EdTech</a>
@@ -70,20 +160,15 @@
     </header>
 
 <!--ÍNDICE-->
-    <details open="open"
-             style="background-color: rgba(5, 115, 99);
-             padding: 50px;
-             color: lightgoldenrodyellow;">
+    <details open="open">
         <summary>Índice</summary>
         <ul class="itens-indice">
-            <li><a href="#trilha-hard-skills"
-                   style="color:rgb(15, 20, 20)">
+            <li><a href="#trilha-hard-skills" class="link-indice">
                   <b>Trilha Hard Skills</b>
                 </a>
             </li>
             <ul>
-                <li><a href="#introducao-a-web"
-                       style="color:rgb(15, 20, 20)">
+                <li><a href="#introducao-a-web" class="link-indice">
                        <b>Introdução a Web</b>
                     </a>
                 </li>
@@ -94,8 +179,7 @@
                     <li>Arquiteturas, XML e JSON</li>
                     <li>Controle de versão</li>                   
                 </ol>
-                <li><a href="#front-end"
-                       style="color:rgb(15, 20, 20)">
+                <li><a href="#front-end" class="link-indice">
                        <b>Front-end</b>
                    </a>
                 </li>
@@ -104,8 +188,7 @@
                     <li>Linguagem de notação HTML</li>
                 </ol>
             </ul>
-            <li><a href="#trilha-soft-skills" 
-                   style="color:rgb(15, 20, 20)">
+            <li><a href="#trilha-soft-skills" class="link-indice">
                    <b>Trilha Soft Skills</b>
                 </a>
             </li>
@@ -115,8 +198,7 @@
                 <li>Tripé da competência (CHA)R</li>
                 <li>Growth Hacking</li>
             </ol>
-            <li><a href="#agenda"
-                   style="color:rgb(15, 20, 20)">
+            <li><a href="#agenda" class="link-indice">
                    <b>Agenda da semana</b>
                 </a>
             </li>
@@ -128,33 +210,20 @@
 
     <!--INTRODUÇÃO PARA TRILHA HARD SKILLS-->
 
-    <div style="background-color: rgb(15, 20, 20);
-                text-align: center;
-                padding: 10px;">
-        <h2 id="trilha-hard-skills"
-            style="color:rgb(255,146,227)"
-        >Trilha Hard Skills</h2>
-        <p class="subtitulo" style="color:rgb(255,146,227)">Materiais para desenvolvimento técnico</p>
-        <p class="citacao" style="color: lightgoldenrodyellow;
-                                  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                  font-size: larger;
-                                  font-style: italic">
+    <section id="intro">
+        <h2>Trilha Hard Skills</h2>
+        <p class="sub-intro">Materiais para desenvolvimento técnico</p>
+        <p class="citacao">
             "Pra não sair falando besteira por aí."
         </p>
-        <p class="autor" style="color: lightgoldenrodyellow;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: smaller">
+        <p class="autor">
             TANIGUCHI, Kenji (2021)
         </p>
-    </div>
+    </section>
 
     <!--TRILHA HARD: LISTA DE MATERIAIS -->
 
-   <div style="background-color: rgb(15, 20, 20);
-               color:lightgoldenrodyellow;
-               padding-top: 10px;
-               padding-bottom: 10px;
-               padding-left: 50px;">
+   <section class="lista-materiais">
 
         <!-- WEB -->
 
@@ -218,7 +287,7 @@
                 </li>
                 <li>
                     <a href="https://anchor.fm/camada8/episodes/Rumo-ao-IPv6-Brasil-ei20ng/a-a2u7kts">
-                        Poadcast Camada 8 - Rumo ao IPv6, Brasil!
+                        Podcast Camada 8 - Rumo ao IPv6, Brasil!
                     </a>
                 </li>
                 <li>
@@ -481,38 +550,29 @@
                     </li>
                 </ul>
             </ol>
-   </div>
+   </section>
 
     <!--INTRODUÇÃO PARA TRILHA SOFT SKILLS-->
 
-    <div style="background-color: rgb(15, 20, 20);
+    <section class="intro" style="background-color: rgb(15, 20, 20);
                 text-align: center;
                 padding: 10px;">
-        <h2 id="trilha-soft-skills" style="color:rgb(255,146,227);
-                                           ">Trilha Soft Skills</h2>
-        <p class="subtitulo" style="color:rgb(255,146,227)">
+        <h2>Trilha Soft Skills</h2>
+        <p class="sub-intro">
             Materiais para desenvolvimento pessoal
         </p>
-        <p class="citacao" style="color:lightgoldenrodyellow;
-                                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                  font-size: larger;
-                                  font-style: italic;">
+        <p class="citacao">
             "O hard pode até colocar o cara na empresa, mas a falta do soft tira."
         </p>
-        <p class="autor" style="color: lightgoldenrodyellow;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: smaller">
+        <p class="autor">
             LÁZARI, Paulo (2021)
         </p>
-    </div>
+    </section>
 
     <!--TRILHA SOFT: MATERIAIS-->
 
-    <div style="background-color: rgb(15, 20, 20);
-               color:lightgoldenrodyellow;
-               padding-top: 10px;
-               padding-bottom: 10px;
-               padding-left: 50px;">
+    <section class="lista-materiais">
+        <h3>*Materiais não-oficiais</h3>
         <ol>
             <li>Lifelong learning</li>
             <ul>
@@ -562,35 +622,29 @@
                 </li>
             </ul>
         </ol>
-    </div>
+    </section>
 
 <!--AGENDA DA SEMANA-->
     
-    <div style="background-color: rgb(15, 20, 20);
-               color:lightgoldenrodyellow;
-               padding-top: 10px;
-               padding-bottom: 10px;
-               padding-left: 50px;
-               padding-right: 50px;">
+    <section id="agenda">
 
-        <h2 id="agenda" style="color:rgb(255,146,227)">Agenda da semana 4-10/10</h2>
+        <h2>Agenda da semana 4-10/10</h2>
 
         <!--TABELA: AGENDA DA SEMANA-->
     
-        <table style="width:100%;height:250px;text-align: center;">
-        <tr height="16%"
-            style="background-color: rgba(5, 115, 98, 0.438);">
-            <th width="9%">HORA/DIA</th>
-            <th width="13%">SEG</th>
-            <th width="13%">TER</th>
-            <th width="13%">QUA</th>
-            <th width="13%">QUI</th>
-            <th width="13%">SEX</th>
-            <th width="13%">SÁB</th>
-            <th width="13%">DOM</th>
+        <table>
+        <tr id="cabecalho-tabela">
+            <th class="coluna-1">HORA/DIA</th>
+            <th class="coluna-2">SEG</th>
+            <th class="coluna-3">TER</th>
+            <th class="coluna-4">QUA</th>
+            <th class="coluna-5">QUI</th>
+            <th class="coluna-6">SEX</th>
+            <th class="coluna-7">SÁB</th>
+            <th class="coluna-8">DOM</th>
         </tr>
-        <tr height="28%">
-            <td style="background-color: rgba(5, 115, 98, 0.438);">MANHÃ</td>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">MANHÃ</td>
             <td colspan=5
                 style="background-color: rgb(5, 115, 99)">
                 6h-8h Redes Alura <br /> 8h-10h Linux Alura <br /> 10h-11h Monitoria 
@@ -599,32 +653,29 @@
             <td id="livre" rowspan=3 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
         
         </tr>
-        <tr height="28%">
-            <td style="background-color: rgba(5, 115, 98, 0.438);">TARDE</td>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">TARDE</td>
             <td style="background-color: rgb(5, 115, 99)" colspan=3> 14h30-16h Trilha hard - Web </td>
             <td style="background-color: rgb(5, 115, 99)" colspan=2> 14h30-16h Trilha hard - Web <br /> 17h30-19h Trilha soft - EdTech </td>
             <td id="livre" rowspan=2 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
         </tr>
-        <tr height="28%">
-            <td style="background-color: rgba(5, 115, 98, 0.438);">NOITE</td>
+        <tr class="linhas-tabela">
+            <td class="coluna-1">NOITE</td>
             <td id="livre" colspan=4 style="background-color: rgba(255, 146, 228, 0.781)"> Livre para sentar a bunda na cadeira e estudar </td>
             <td style="background-color: rgb(5, 115, 99)">18h-19h Trilha soft - Empresa Parceira</td>
         </tr>
         </table>
-    </div>
+    </section>
 
 <!--RODAPÉ DA PÁGINA-->
 
-<div style="background-color: rgb(15, 20, 20);
-            color: lightgoldenrodyellow;
-            padding: 20px;">
-    <p style="text-align: center;font-size: smaller;">
+<footer>
+    <p style="">
         © Todos direitos nada reservados
         <br>
         <a href="https://www.linkedin.com/in/corcoviacaique" target="_blank">
             Caique C. O. Corcovia
         </a>
     </p>
-</div>
-
+</footer>
 </body>
